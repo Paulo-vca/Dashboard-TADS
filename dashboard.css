@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root{
+    --cor1:#00BFFF;
+    --cor2:#b173dd;
+    --cor3:#963dd6;
+    --cor4:#4c52f9;
+    --cor5:#242aee;
+    --cor6:#f1655b;
+    --cor7:#f69162;
+    --cor8:#eeeaea;
+    --cor9:white;
+    --cor10:#696969;
+}
+
+*{
+    list-style:none;
+    text-decoration:none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+hmtl{
+    font-size: 62.5%;
+    font-family: 'Poppins';
+}
+
+h1{
+    font-size:2.2rem;
+    font-weight: 400;
+}
+
+h3{
+    font-size:1rem;
+    font-weight: 400;
+}
+
+h4{
+    font-size:1.3rem;
+    font-weight: 300;
+}
+
+.content{
+    display: flex;
+}
+
+
+.header{
+background: #00BFFF;
+height: 5rem;
+}
+
+nav{
+    background: var(--cor9);
+    width: 15rem;
+    height: 35rem;
+    
+}
+
+nav .menu li a {
+    margin: 1px;
+    padding: 1rem;
+    display: flex;
+    gap:0.6rem;
+    align-items: center;
+    color:var(--cor10);
+}
+
+/* nav .menu li a i{ 
+    justify-content: flex-end;
+}*/
+
+nav button {
+    background: var(--cor1);
+    border-radius:0.3rem;
+    height: 40px;
+    width: 200px;
+    color: var(--cor9);
+    justify-content:center;
+    align-items:center;
+}
+
+.boxCartoes{
+    gap:1rem;
+    padding: 1rem;
+    background: var(--cor8);
+}
+
+.box1 .boxCartoes{
+    display: flex;
+    width: 70rem;
+    height: 15rem;
+}
+
+.box1 .boxTabela{
+    background: #f1655b;
+    width: 70rem;
+    height: 18rem;
+}
+
+.content .box1 .cartao1{
+    background: linear-gradient(90deg, #b173dd, #963dd6);
+    width:22rem;
+    height:12;
+    padding:2rem 2rem;
+    border-radius: 1rem;
+    color:var(--cor9);
+    font-size:1.2rem;
+}
+
+.content .box1 .cartao1 .imagemPosition{
+    position: relative;
+}
+
+.content .box1 .cartao1 .imagemPosition i{
+    font-size:12rem;
+    position: absolute;
+    top:1rem;
+    left:12rem;
+    color:white, 0.2;
+}
+.imagemPosition{
+    opacity: 0.2;
+}
+
+.content .box1 .cartao2{
+    background: linear-gradient(90deg, #4c52f9, #242aee);
+    width:22rem;
+    height:12;
+    padding:2rem 2rem;
+    border-radius: 1rem;
+    color:var(--cor9);
+    font-size:1.2rem;
+}
+
+.content .box1 .cartao3{
+    background: linear-gradient(90deg, #f69162, #f1655b);
+    width:22rem;
+    height:12;
+    padding:2rem 2rem;
+    border-radius: 1rem;
+    color:var(--cor9);
+    font-size:1.2rem;
+}
