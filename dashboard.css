@@ -50,10 +50,40 @@ h4{
     
 }
 
+header {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
 
-.header{
-background: #00BFFF;
-height: 5rem;
+.content .profile {
+    display: flex;
+    width: 22rem;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.content .profile .avatar {
+    position: relative;
+}
+
+.content .profile .avatar img {
+    width: 6.3rem;
+    height: 6.3rem;
+    border-radius: 50%;
+}
+
+.content .profile .avatar .status {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(0, 182, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
 }
 
 .logo{
@@ -76,6 +106,12 @@ nav{
     
 }
 
+nav .menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
 nav .menu li a {
     margin: 1px;
     padding: 1rem;
@@ -83,6 +119,33 @@ nav .menu li a {
     gap:0.6rem;
     align-items: center;
     color:var(--cor10);
+}
+
+.content .pesquisa {
+    display: flex;
+    width:45rem;
+    background: rgb(217, 216, 216);
+    height: 50%;
+    border-radius: var(--border-radius1);
+    /* justify-content: center; */
+    padding-left: 2rem;
+    align-items: center;
+}
+
+.content .pesquisa input {
+    width: 90%;
+    height: 3rem;
+    background: transparent;
+    font-size: 1.4rem;
+    color:rgb(97, 97, 97)
+}
+
+.content .pesquisa i{
+    font-size: 2rem;
+}
+
+nav .menu li:hover a {
+    color: var(--cor1);
 }
 
 /* nav .menu li a i{ 
