@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    
 }
 
 body{
@@ -46,12 +47,26 @@ h4{
 
 .content{
     display: flex;
+    
 }
 
 
 .header{
 background: #00BFFF;
 height: 5rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5rem;
+    color: var(--cor1);
+    font-size: 2.2rem;
+    font-weight: 900;
+    
+    top: 20px;
+    left: 50px;
+    letter-spacing: 1px;
 }
 
 nav{
