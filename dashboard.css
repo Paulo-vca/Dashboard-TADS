@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 :root{
+    --cor0:#6ce1fe;
     --cor1:#00BFFF;
-    --cor2:#b173dd;
-    --cor3:#963dd6;
-    --cor4:#4c52f9;
-    --cor5:#242aee;
-    --cor6:#f1655b;
-    --cor7:#f69162;
+    --cor2:#c18bf8;
+    --cor3:#ad67f5;
+    --cor4:#6a9fe4;
+    --cor5:#686fe8;
+    --cor6:#ff9191;
+    --cor7:#feb284;
     --cor8:#f7f5f5;
     --cor9:white;
     --cor10:#696969;
@@ -76,7 +77,11 @@ h4{
 
 .container .header .titulo{
     color: var(--cor1);
-    padding: 3rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    
+    
 }
 
 .container .pesquisa{
@@ -148,7 +153,7 @@ nav .menu li a {
 
 
 nav button {
-    background: var(--cor1);
+    background: linear-gradient(180deg, var(--cor0), var(--cor1));
     border-radius:0.3rem;
     height: 40px;
     width: 200px;
@@ -224,10 +229,24 @@ nav button {
 
 .content .boxTabela table div {
     padding: .7rem 0;
-    border-radius: 1.3rem;
     font-weight: 600;
     text-align: center;
     
+}
+
+.pending{
+    background: linear-gradient(180deg, var(--cor2),var(--cor3));
+    color: var(--cor9);
+}
+
+.approved{
+    background: linear-gradient(180deg, var(--cor4),var(--cor5));
+    color: var(--cor9);
+}
+
+.reject{
+    background: linear-gradient(180deg, var(--cor7),var(--cor6));
+    color: var(--cor9);
 }
 
 
@@ -246,14 +265,13 @@ nav button {
     height: 50px;
     width: 50px;
     color:var(--cor9);
-    background: var(--cor1);
+    background: linear-gradient(180deg, var(--cor0), var(--cor1));
     border-radius:0.5rem;
-    font-size: 1.5rem;
-    
+    font-size: 2.2rem;
 }
 
 .content .box1 .cartao1{
-    background: linear-gradient(90deg, #b173dd, #963dd6);
+    background: linear-gradient(90deg, var(--cor2), var(--cor3));
     width:22rem;
     height:12;
     padding:2rem 2rem;
@@ -278,7 +296,7 @@ nav button {
 }
 
 .content .box1 .cartao2{
-    background: linear-gradient(90deg, #4c52f9, #242aee);
+    background: linear-gradient(90deg, var(--cor4), var(--cor5));
     width:22rem;
     height:12;
     padding:2rem 2rem;
@@ -288,7 +306,7 @@ nav button {
 }
 
 .content .box1 .cartao3{
-    background: linear-gradient(90deg, #f69162, #f1655b);
+    background: linear-gradient(90deg, var(--cor7), var(--cor6));
     width:22rem;
     height:12;
     padding:2rem 2rem;
