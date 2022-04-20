@@ -7,9 +7,10 @@
     --cor5:#242aee;
     --cor6:#f1655b;
     --cor7:#f69162;
-    --cor8:#eeeaea;
+    --cor8:#f7f5f5;
     --cor9:white;
     --cor10:#696969;
+    --cor11:#b4b4b4;
 }
 
 *{
@@ -18,7 +19,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    
 }
 
 body{
@@ -35,6 +35,11 @@ h1{
     font-weight: 400;
 }
 
+h2{
+    font-size:1.8rem;
+    font-weight: 400;
+}
+
 h3{
     font-size:1rem;
     font-weight: 400;
@@ -45,59 +50,84 @@ h4{
     font-weight: 300;
 }
 
-.content{
+.container .header{
     display: flex;
-    
-}
-
-header {
-    display: flex;
-    gap: 2rem;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 2rem;
-}
-
-.content .profile {
-    display: flex;
-    width: 22rem;
-    gap: 2rem;
     align-items: center;
-
+    height: 5rem;
+    background: var(--cor9);
 }
 
-.content .profile .avatar {
+.container .header .notificacao{
+    
+    display: flex;
+    width: 10rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor11);
+}
+
+.container .header .prolifeEnot{
+    width: 48rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+.container .header .titulo{
+    color: var(--cor1);
+    padding: 3rem;
+}
+
+.container .pesquisa{
+font-size: 1.5rem;
+color: var(--cor11);
+margin: 5rem;
+}
+
+.container .pesquisa input{
+    font-size: 1rem;
+}
+
+.container .profile { 
+    display: flex;
+    width: 13rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.container .profile .iconPerfil{
+    color: var(--cor1);
+}
+
+.container .profile .perfil {
     position: relative;
 }
 
-.content .profile .avatar img {
-    width: 6.3rem;
-    height: 6.3rem;
-    border-radius: 50%;
+.container .profile .perfil img {
+    width: 3rem;
+    height: 3rem;
 }
 
-.content .profile .avatar .status {
-    width: 1rem;
-    height: 1rem;
+
+.container .profile .perfil .status {
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: rgb(0, 182, 0);
     border-radius: 50%;
     position: absolute;
-    top: 5rem;
-    left: 1rem;
+    top: 2.5rem;
+    left: 0.8rem;
 }
 
-.logo{
+.content{
     display: flex;
-    justify-content: center;
-    padding-top: 3.5rem;
-    color: var(--cor1);
-    font-size: 2.2rem;
-    font-weight: 900;
-    
-    top: 20px;
-    left: 50px;
-    letter-spacing: 1px;
 }
+
+.box1{
+    background: var(--cor8);
+}
+
 
 nav{
     background: var(--cor9);
@@ -106,51 +136,16 @@ nav{
     
 }
 
-nav .menu {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 4rem;
-}
-
 nav .menu li a {
     margin: 1px;
     padding: 1rem;
     display: flex;
     gap:0.6rem;
     align-items: center;
+    justify-content: space-between;
     color:var(--cor10);
 }
 
-.content .pesquisa {
-    display: flex;
-    width:45rem;
-    background: rgb(217, 216, 216);
-    height: 50%;
-    border-radius: var(--border-radius1);
-    /* justify-content: center; */
-    padding-left: 2rem;
-    align-items: center;
-}
-
-.content .pesquisa input {
-    width: 90%;
-    height: 3rem;
-    background: transparent;
-    font-size: 1.4rem;
-    color:rgb(97, 97, 97)
-}
-
-.content .pesquisa i{
-    font-size: 2rem;
-}
-
-nav .menu li:hover a {
-    color: var(--cor1);
-}
-
-/* nav .menu li a i{ 
-    justify-content: flex-end;
-}*/
 
 nav button {
     background: var(--cor1);
@@ -161,6 +156,7 @@ nav button {
     justify-content:center;
     align-items:center;
 }
+
 
 .boxCartoes{
     gap:1rem;
@@ -175,9 +171,85 @@ nav button {
 }
 
 .box1 .boxTabela{
-    background: #f1655b;
+    background: var(--cor9);
     width: 70rem;
     height: 18rem;
+    border-radius: 1.3rem;
+}
+
+/* inicio */
+
+ .content .box1 .boxTabela {
+    height: 20rem;
+    display: flex;
+    font-size: 1.2rem;
+    gap: 2rem;
+
+}
+
+.content .boxTabela{
+    width: 72rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content .boxTabela table {
+    background: var(--bg-white);
+    border-radius: var(--border-radius1);
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.content .boxTabela tr th{
+    padding: 1.7rem 1rem;
+    border-bottom: 1.5px solid #ebe8e8;
+}
+
+.content .boxTabela tr td {
+    padding: 1rem 1rem;
+    border-bottom: 1.5px solid #ebe8e8;
+}
+.content .boxTables tr td{
+    padding: 1rem 1rem;
+    border-bottom: 1.5px solid #ebe8e8;
+}
+
+.content .boxTabela {
+    padding: 3rem 0;
+    color: var(--cor10);
+}
+
+.content .boxTabela table div {
+    padding: .7rem 0;
+    border-radius: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+
+/* fim */
+
+.box1 .cabecalhoCartoes{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    background: var(--cor8);
+    
+}
+
+.box1 .cabecalhoCartoes button{
+    height: 50px;
+    width: 50px;
+    color:var(--cor9);
+    background: var(--cor1);
+    border-radius:0.5rem;
+    font-size: 1.5rem;
+    
 }
 
 .content .box1 .cartao1{
