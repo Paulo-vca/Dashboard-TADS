@@ -49,7 +49,7 @@ h3{
 
 h4{
     font-size:1.3rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .container .header{
@@ -132,6 +132,8 @@ margin: 5rem;
 
 .box1{
     background: var(--cor8);
+    padding-top: 2rem;
+    height: 80rem;
 }
 
 
@@ -139,7 +141,13 @@ nav{
     background: var(--cor9);
     width: 15rem;
     height: 35rem;
-    
+    padding-right: 3rem;
+    padding-left: 0.5rem;
+    padding-top: 3rem;
+}
+
+nav .menu .buttonNav{
+    padding: 1rem;
 }
 
 nav .menu li a {
@@ -173,32 +181,38 @@ nav .menu li a {
 nav button {
     background: linear-gradient(180deg, var(--cor0), var(--cor1));
     border-radius:0.3rem;
-    height: 40px;
-    width: 200px;
+    height: 3rem;
+    width: 11rem;
     color: var(--cor9);
     justify-content:center;
     align-items:center;
 }
 
+nav .profile{
+    padding: 0rem 0rem 1rem;
+}
 
 .boxCartoes{
     gap:1rem;
-    padding: 1rem;
+    padding: 2rem;
     background: var(--cor8);
 }
 
 .box1 .boxCartoes{
     display: flex;
-    width: 70rem;
+    width: 65rem;
     height: 15rem;
 }
 
+.divTabela{
+    padding: 2rem;
+}
+
 .box1 .boxTabela{
-    background: var(--cor9);
-    width: 70rem;
-    height: 18rem;
+    background: var(--cor8);
     border-radius: 1.3rem;
 }
+
 
 /* inicio */
 
@@ -211,19 +225,21 @@ nav button {
 }
 
 .content .boxTabela{
-    width: 72rem;
-    height: 50rem;
     display: flex;
     flex-direction: column;
 }
 
+.boxTabela .divTabela .tableDesign{
+    background: var(--cor9);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
 
 .content .boxTabela table {
-    background: var(--bg-white);
-    border-radius: var(--border-radius1);
+    background: var(--cor9);
     width: 100%;
-    border-collapse: collapse;
     height: 100%;
+    padding: 1rem;
 }
 
 .content .boxTabela tr th{
@@ -232,10 +248,6 @@ nav button {
 }
 
 .content .boxTabela tr td {
-    padding: 1rem 1rem;
-    border-bottom: 1.5px solid #ebe8e8;
-}
-.content .boxTables tr td{
     padding: 1rem 1rem;
     border-bottom: 1.5px solid #ebe8e8;
 }
@@ -272,11 +284,15 @@ nav button {
 
 .box1 .cabecalhoCartoes{
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
     gap: 1rem;
     align-items: center;
     background: var(--cor8);
     
+}
+
+.box1 .cabecalhoCartoes{
+    color: var(--cor10);
 }
 
 .box1 .cabecalhoCartoes button{
