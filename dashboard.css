@@ -49,7 +49,7 @@ h3{
 
 h4{
     font-size:1.3rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .container .header{
@@ -67,6 +67,29 @@ h4{
     align-items: center;
     justify-content: space-between;
     color: var(--cor11);
+}
+
+.not1{
+    position: relative;
+}
+.not2{
+    position: relative;
+}
+
+.icon1, .icon2{
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 100%;
+    position: absolute;
+    top: -0.1rem;
+    left: 0.7rem;
+}
+
+.icon1{
+    background: var(--cor6);
+}
+.icon2{
+    background: var(--cor3);
 }
 
 .container .header .prolifeEnot{
@@ -132,6 +155,8 @@ margin: 5rem;
 
 .box1{
     background: var(--cor8);
+    padding-top: 2rem;
+    height: 80rem;
 }
 
 
@@ -139,7 +164,13 @@ nav{
     background: var(--cor9);
     width: 15rem;
     height: 35rem;
-    
+    padding-right: 3rem;
+    padding-left: 0.5rem;
+    padding-top: 3rem;
+}
+
+nav .menu .buttonNav{
+    padding: 1rem;
 }
 
 nav .menu li a {
@@ -173,32 +204,38 @@ nav .menu li a {
 nav button {
     background: linear-gradient(180deg, var(--cor0), var(--cor1));
     border-radius:0.3rem;
-    height: 40px;
-    width: 200px;
+    height: 3rem;
+    width: 11rem;
     color: var(--cor9);
     justify-content:center;
     align-items:center;
 }
 
+nav .profile{
+    padding: 0rem 0rem 1rem;
+}
 
 .boxCartoes{
     gap:1rem;
-    padding: 1rem;
+    padding: 2rem;
     background: var(--cor8);
 }
 
 .box1 .boxCartoes{
     display: flex;
-    width: 70rem;
+    width: 65rem;
     height: 15rem;
 }
 
+.divTabela{
+    padding: 2rem;
+}
+
 .box1 .boxTabela{
-    background: var(--cor9);
-    width: 70rem;
-    height: 18rem;
+    background: var(--cor8);
     border-radius: 1.3rem;
 }
+
 
 /* inicio */
 
@@ -211,19 +248,21 @@ nav button {
 }
 
 .content .boxTabela{
-    width: 72rem;
-    height: 50rem;
     display: flex;
     flex-direction: column;
 }
 
+.boxTabela .divTabela .tableDesign{
+    background: var(--cor9);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
 
 .content .boxTabela table {
-    background: var(--bg-white);
-    border-radius: var(--border-radius1);
+    background: var(--cor9);
     width: 100%;
-    border-collapse: collapse;
     height: 100%;
+    padding: 1rem;
 }
 
 .content .boxTabela tr th{
@@ -232,10 +271,6 @@ nav button {
 }
 
 .content .boxTabela tr td {
-    padding: 1rem 1rem;
-    border-bottom: 1.5px solid #ebe8e8;
-}
-.content .boxTables tr td{
     padding: 1rem 1rem;
     border-bottom: 1.5px solid #ebe8e8;
 }
@@ -272,11 +307,15 @@ nav button {
 
 .box1 .cabecalhoCartoes{
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
     gap: 1rem;
     align-items: center;
     background: var(--cor8);
     
+}
+
+.box1 .cabecalhoCartoes{
+    color: var(--cor10);
 }
 
 .box1 .cabecalhoCartoes button{
@@ -298,20 +337,44 @@ nav button {
     font-size:1.2rem;
 }
 
-.content .box1 .cartao1 .imagemPosition{
+.cartao1, .cartao2, .cartao3{
     position: relative;
 }
 
-.content .box1 .cartao1 .imagemPosition i{
-    font-size:12rem;
+.text03{
     position: absolute;
-    top:1rem;
-    left:12rem;
-    color:white, 0.2;
+    top: 11rem;
+
 }
-.imagemPosition{
-    opacity: 0.2;
+
+.circu1{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 0.9rem;
+    left: 13.8rem;
 }
+
+.circu1{
+    background: var(--cor8);
+    opacity: 15%;
+}
+.circu2{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 7rem;
+    left: 11rem;
+}
+
+.circu2{
+    background: var(--cor8);
+    opacity: 15%;
+}
+
+
 
 .content .box1 .cartao2{
     background: linear-gradient(90deg, var(--cor4), var(--cor5));
