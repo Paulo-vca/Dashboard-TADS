@@ -12,6 +12,7 @@
     --cor9:white;
     --cor10:#696969;
     --cor11:#b4b4b4;
+    --text01:#999999;
 }
 
 *{
@@ -151,6 +152,23 @@ nav .menu li a {
     color:var(--cor10);
 }
 
+.hello{
+    font-size: 0.9rem;
+    color: var(--text01);
+    font-weight: 300;
+}
+/* perfil do menu */
+.name01{
+    font-size: 1.0rem;
+    color: var(--cor10);
+    font-weight: 300;
+}
+
+.name{
+    font-size: 1.2rem;
+    color: var(--cor10);
+    font-weight: 600;
+}
 
 nav button {
     background: linear-gradient(180deg, var(--cor0), var(--cor1));
