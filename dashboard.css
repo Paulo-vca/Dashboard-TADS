@@ -14,6 +14,7 @@
     --cor11:#b4b4b4;
     --online:rgb(0, 182, 0);
     --text01:#999999;
+    --search:lightgray;
 }
 
 *{
@@ -100,32 +101,61 @@ h4{
     justify-content: flex-end;
 }
 
+.header{
+    position: relative;
+    left: 2.8rem;
+
+}
+
 .container .header .titulo{
     color: var(--cor1);
     padding: 4rem;
     font-size: 1.8rem;
     font-weight: 900;
-    
-    
+}
+
+.pesquisa{
+    position: relative;
+}
+.pesquisa i{
+    position: absolute;
+    width: 0.3rem;
+    height: 0.3rem;
+    top: 2.7rem;
+    left: 0.6rem;
+}
+
+.search{
+    position: absolute;
+    width: 0.3rem;
+    height: 0.3rem;
+    top: -3.5rem;
+    left: -3rem;
+
 }
 
 .container .pesquisa{
-font-size: 1.5rem;
-color: var(--cor11);
-margin: 5rem;
+    font-size: 1.5rem;
+    color: var(--cor11);
+    margin: 5rem;
+}
+
+input::placeholder {
+    color: var(--search);
 }
 
 .container .pesquisa input{
     font-size: 1rem;
     margin: 3rem;
+    
 }
-
 .container .profile { 
     display: flex;
     width: 13rem;
     gap: 1rem;
     align-items: center;
 }
+
 
 .container .profile .iconPerfil{
     color: var(--cor1);
