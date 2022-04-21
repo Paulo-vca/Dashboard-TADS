@@ -12,6 +12,7 @@
     --cor9:white;
     --cor10:#696969;
     --cor11:#b4b4b4;
+    --online:rgb(0, 182, 0);
     --text01:#999999;
 }
 
@@ -101,9 +102,9 @@ h4{
 
 .container .header .titulo{
     color: var(--cor1);
-    padding: 2rem;
+    padding: 4rem;
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 900;
     
     
 }
@@ -116,6 +117,7 @@ margin: 5rem;
 
 .container .pesquisa input{
     font-size: 1rem;
+    margin: 3rem;
 }
 
 .container .profile { 
@@ -142,7 +144,7 @@ margin: 5rem;
 .container .profile .perfil .status {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: rgb(0, 182, 0);
+    background-color: var(--online);
     border-radius: 50%;
     position: absolute;
     top: 2.5rem;
@@ -165,12 +167,12 @@ nav{
     width: 15rem;
     height: 35rem;
     padding-right: 3rem;
-    padding-left: 0.5rem;
+    padding-left: 2rem;
     padding-top: 3rem;
 }
 
 nav .menu .buttonNav{
-    padding: 1rem;
+    padding: 2rem;
 }
 
 nav .menu li a {
@@ -227,17 +229,18 @@ nav .profile{
     height: 15rem;
 }
 
+/* inicio da tabela */
+
+.boxTabela{
+    height: 40rem;
+    gap: 2.5rem;
+}
+
 .divTabela{
     padding: 2rem;
+    width: 94.2%;
+
 }
-
-.box1 .boxTabela{
-    background: var(--cor8);
-    border-radius: 1.3rem;
-}
-
-
-/* inicio */
 
  .content .box1 .boxTabela {
     height: 20rem;
@@ -247,18 +250,25 @@ nav .profile{
 
 }
 
-.content .boxTabela{
+.boxTabela{
     display: flex;
     flex-direction: column;
 }
 
-.boxTabela .divTabela .tableDesign{
+.tableDesign{
     background: var(--cor9);
-    border-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
     padding: 2rem;
+    
 }
 
-.content .boxTabela table {
+.tabela1{
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    border-spacing: 0;
+    
+}
+
+.content .boxTabela .tabela1 {
     background: var(--cor9);
     width: 100%;
     height: 100%;
@@ -268,6 +278,7 @@ nav .profile{
 .content .boxTabela tr th{
     padding: 1.7rem 1rem;
     border-bottom: 1.5px solid #ebe8e8;
+    text-align: left;
 }
 
 .content .boxTabela tr td {
@@ -280,7 +291,7 @@ nav .profile{
     color: var(--cor10);
 }
 
-.content .boxTabela table div {
+.content .boxTabela .tabela1 div {
     padding: .7rem 0;
     font-weight: 600;
     text-align: center;
