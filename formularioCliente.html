@@ -4,55 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Formulário Cliente</title>
 </head>
 <body>
    <div class="container">
-    <nav>
-        <h2>Cadastro</h2>
-        <h3>Cliente</h3>
-        <h3>Fornecedor</h3>
-        <h3>Produtos</h3>
-    </nav>
-    <div class="box1">
-        <h1>Formulário Cliente</h1>
-        <div class="TipoPessoa">
-            <input type="radio" name="Tradio"/>Pessoa jurídica
-            <input type="radio" name="Tradio"/>Pessoa física
+
+    <div class="header">
+        <div class="titulo">
+            blueBox
         </div>
-        <div class="nome">
-            <h3>Nome</h3>
-            <input type="page" name="Tpage" placeholder = "Seu nome"/>
+
+        <div class="pesquisa">
+            <div class="search">
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Search Project"/>
+            </div>
         </div>
-        <div class="CPF">
-            <h3>CPF</h3>
-            <input type="page" name="Tpage" placeholder = "Seu CPF"/>
-        </div>
-        <div class="email">
-            <h3>Email</h3>
-            <input type="email" name="Temail" placeholder = "Seu e-mail"/>
-        </div>
-        <div class="nascimento">
-            <h3>Data Nascimento</h3>
-            <input type="date" name="Tdate"/>
-        </div>
-        <div class="sexo">
-            <h3>Sexo</h3>
-            <select id="opSexo">
-                <option value="feminino">Femenino</option>
-                <option value="masculino">Masculino</option>
-              </select>
-        </div>
-        <div class="telefone">
-            <h3>Telefone</h3>
-            <input type="tel" name="Ttel" autofocus/>
-        </div>
-        <div class="botao">
-            <button> 
-                <h3>Submit</h3>
-            </button>
+        <div class="prolifeEnot">
+            <div class="profile">
+                <div class="perfil">
+                    <img src="perfil.jpg" alt="" />
+                <div class="status"></div>
+                </div>
+                <div class="info-perfil">
+                    <p class="name01">Angelina Joe</p>
+                </div>
+                <div class="iconPerfil">
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+            </div>
+            <div class="notificacao">
+                <div class="not1">
+                    <i class='bx bxs-envelope'></i>
+                    <div class="icon1"></div>
+                </div>
+                <div class="not2">
+                    <i class='bx bxs-bell'></i>
+                    <div class="icon2"></div>
+                </div>
+                <div class="not3">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
         </div>
     </div>
-   </div> 
+    <div class="content">
+        <nav>
+            <!--perfil do menu-->
+            <div class="profile">
+                <div class="perfil">
+                    <img src="perfil.jpg" alt="" />
+                </div>
+                <div class="info-perfil">
+                    <p class="name">Angelina Joe</p>
+                    <p class="hello">Progect Menager</p>
+                </div>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="./dashboard.html"><h3>Home</h3><i class='bx bxs-home'></i></a>  
+                </li>
+                <li>
+                    <a href="./AtividadeFormularioCliente.html"><h3>Clientes</h3><i class='bx bxs-group'></i></a>  
+                </li>
+                <li>
+                    <a href="./AtividadeFormularioFornecedor.html"><h3>Fornecedores</h3><i class='bx bxs-group'></i></a> 
+                </li>
+                <li>
+                    <a href="./AtividadeFormularioProdutos.html"><h3>Produtos</h3><i class='bx bx-volume-low'></i></i></a> 
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Forms Stuff</h3>
+                        <i class='bx bxs-grid'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Data Table</h3>
+                        <i class='bx bxs-calendar'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Icons</h3>
+                        <i class='bx bxs-slideshow'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Sample Page</h3>
+                        <i class='bx bx-slideshow' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Extra</h3>
+                        <i class='bx bxs-file'></i>
+                    </a>
+                </li>
+
+                <div class="buttonNav">
+                    <button> 
+                        <h3>Add Project</h3>
+                    </button>
+                </div>
+
+            </ul>
+            
+        </nav>
+
+
+        <div class="box1">
+            <h1>Formulário Cliente</h1>
+            <div class="TipoPessoa">
+                <input type="radio" name="Tradio"/>Pessoa jurídica
+                <input type="radio" name="Tradio"/>Pessoa física
+            </div>
+            <div class="nome">
+                <h3>Nome</h3>
+                <input type="page" name="Tpage" placeholder = "Seu nome"/>
+            </div>
+            <div class="CPF">
+                <h3>CPF</h3>
+                <input type="page" name="Tpage" placeholder = "Seu CPF"/>
+            </div>
+            <div class="email">
+                <h3>Email</h3>
+                <input type="email" name="Temail" placeholder = "Seu e-mail"/>
+            </div>
+            <div class="nascimento">
+                <h3>Data Nascimento</h3>
+                <input type="date" name="Tdate"/>
+            </div>
+            <div class="sexo">
+                <h3>Sexo</h3>
+                <select id="opSexo">
+                    <option value="feminino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+            </div>
+            <div class="telefone">
+                <h3>Telefone</h3>
+                <input type="tel" name="Ttel" autofocus/>
+            </div>
+            <div class="botao">
+                <button> 
+                    <h3>Submit</h3>
+                </button>
+            </div>
+        </div>
+    </div> 
+</div> 
 </body>
 </html>
