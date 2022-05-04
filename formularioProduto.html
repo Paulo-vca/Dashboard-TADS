@@ -4,65 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Formulário Produtos</title>
 </head>
 <body>
    <div class="container">
-    <nav>
-        <h2>Cadastro</h2>
-        <h3>Cliente</h3>
-        <h3>Fornecedor</h3>
-        <h3>Produtos</h3>
-    </nav>
-    <div class="box1">
-        <h1>Formulário Produtos</h1>
-        <div class="codigo">
-            <h3>Código</h3>
-            <input type="number" name="Tnumber"/>
+    
+    <div class="header">
+        <div class="titulo">
+            blueBox
         </div>
-        <div class="suprimentos">
-            <h3>Suprimentos</h3>
-            <input type="radio" name="Tradio"/>COMPRADO
-            <input type="radio" name="Tradio"/>FABRICADO
+
+        <div class="pesquisa">
+            <div class="search">
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Search Project"/>
+            </div>
         </div>
-        <div class="nomeP">
-            <h3>Nome Produto</h3>
-            <input type="page" name="Tpage"/>
-        </div>
-        <div class="estoque">
-            <h3>Estoque Mínimo</h3>
-            <input type="number" name="Tnumber"/>
-        </div>
-        <div class="und">
-            <h3>Unidade de Medida</h3>
-            <input type="page" name="Tpage"/>
-        </div>
-        <div class="ncm">
-            <h3>NCM</h3>
-            <select id="opNCM">
-                <option value="ncmP">03051000</option>
-                <option value="ncmP">04100000</option>>
-                <option value="ncmP">15091000</option>
-                <option value="ncmP">20029010</option>
-                <option value="ncmP">25183000</option>>
-                <option value="ncmP">29033932</option>
-                <option value="ncmP">30062000</option>
-              </select>
-        </div>
-        <div class="preco">
-            <h3>Preço Médio</h3>
-            <input type="page" name="Tpage"/>
-        </div>
-        <div class="fabricante">
-            <h3>Fabricante</h3>
-            <input type="page" name="Tpage"/>
-        </div>
-        <div class="botao">
-            <button> 
-                <h3>Submit</h3>
-            </button>
+        <div class="prolifeEnot">
+            <div class="profile">
+                <div class="perfil">
+                    <img src="perfil.jpg" alt="" />
+                <div class="status"></div>
+                </div>
+                <div class="info-perfil">
+                    <p class="name01">Angelina Joe</p>
+                </div>
+                <div class="iconPerfil">
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+            </div>
+            <div class="notificacao">
+                <div class="not1">
+                    <i class='bx bxs-envelope'></i>
+                    <div class="icon1"></div>
+                </div>
+                <div class="not2">
+                    <i class='bx bxs-bell'></i>
+                    <div class="icon2"></div>
+                </div>
+                <div class="not3">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
         </div>
     </div>
-   </div> 
+    <div class="content">
+        <nav>
+            <!--perfil do menu-->
+            <div class="profile">
+                <div class="perfil">
+                    <img src="perfil.jpg" alt="" />
+                </div>
+                <div class="info-perfil">
+                    <p class="name">Angelina Joe</p>
+                    <p class="hello">Progect Menager</p>
+                </div>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="./dashboard.html"><h3>Home</h3><i class='bx bxs-home'></i></a>  
+                </li>
+                <li>
+                    <a href="./AtividadeFormularioCliente.html"><h3>Clientes</h3><i class='bx bxs-group'></i></a>  
+                </li>
+                <li>
+                    <a href="./AtividadeFormularioFornecedor.html"><h3>Fornecedores</h3><i class='bx bxs-group'></i></a> 
+                </li>
+                <li>
+                    <a href="./AtividadeFormularioProdutos.html"><h3>Produtos</h3><i class='bx bx-volume-low'></i></i></a> 
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Forms Stuff</h3>
+                        <i class='bx bxs-grid'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Data Table</h3>
+                        <i class='bx bxs-calendar'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Icons</h3>
+                        <i class='bx bxs-slideshow'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Sample Page</h3>
+                        <i class='bx bx-slideshow' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Extra</h3>
+                        <i class='bx bxs-file'></i>
+                    </a>
+                </li>
+
+                <div class="buttonNav">
+                    <button> 
+                        <h3>Add Project</h3>
+                    </button>
+                </div>
+
+            </ul>
+            
+        </nav>
+            <div class="box1">
+                <h1>Formulário Produtos</h1>
+                <div class="codigo">
+                    <h3>Código</h3>
+                    <input type="number" name="Tnumber"/>
+                </div>
+                <div class="suprimentos">
+                    <h3>Suprimentos</h3>
+                    <input type="radio" name="Tradio"/>COMPRADO
+                    <input type="radio" name="Tradio"/>FABRICADO
+                </div>
+                <div class="nomeP">
+                    <h3>Nome Produto</h3>
+                    <input type="page" name="Tpage"/>
+                </div>
+                <div class="estoque">
+                    <h3>Estoque Mínimo</h3>
+                    <input type="number" name="Tnumber"/>
+                </div>
+                <div class="und">
+                    <h3>Unidade de Medida</h3>
+                    <select id="opUND">
+                        <option value="undP">KG</option>
+                        <option value="undP">L</option>>
+                        <option value="undP">PC</option>
+                        <option value="undP">SC</option>
+                        <option value="undP">ROL</option>>
+                        <option value="undP">UN</option>
+                    </select>
+                </div>
+                <div class="ncm">
+                    <h3>NCM</h3>
+                    <select id="opNCM">
+                        <option value="ncmP">03051000</option>
+                        <option value="ncmP">04100000</option>>
+                        <option value="ncmP">15091000</option>
+                        <option value="ncmP">20029010</option>
+                        <option value="ncmP">25183000</option>>
+                        <option value="ncmP">29033932</option>
+                        <option value="ncmP">30062000</option>
+                    </select>
+                </div>
+                <div class="preco">
+                    <h3>Preço Médio</h3>
+                    <input type="page" name="Tpage"/>
+                </div>
+                <div class="fabricante">
+                    <h3>Fabricante</h3>
+                    <input type="page" name="Tpage"/>
+                </div>
+                <div class="botao">
+                    <button> 
+                        <h3>Submit</h3>
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </div> 
 </body>
 </html>
