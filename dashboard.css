@@ -20,6 +20,7 @@
 *{
     list-style:none;
     text-decoration:none;
+    outline: none;
     margin: 0;
     padding: 0;
     border: 0;
@@ -29,7 +30,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-hmtl{
+html{
     font-size: 62.5%;
     font-family: 'Poppins';
 }
@@ -436,4 +437,24 @@ nav .profile{
     border-radius: 1rem;
     color:var(--cor9);
     font-size:1.2rem;
+}
+
+/* formulario 01 */
+
+.boxformulario{
+    background: linear-gradient(0deg, rgba(129,227,245,1) 0%, rgba(191,140,246,1) 100%);    padding:2rem 2rem;
+    border-radius: 1rem;
+    font-size:1.5rem;
+    width: 100%;
+    height: 50rem;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 2.5rem;
+}
+
+.botao{
+    position: relative;
+    top: 4.6rem;
+    left: 1rem;
+
 }
