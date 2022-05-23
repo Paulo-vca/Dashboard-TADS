@@ -67,13 +67,13 @@
                     <a href="./dashboard.html"><h3>Home</h3><i class='bx bxs-home'></i></a>  
                 </li>
                 <li>
-                    <a href="./AtividadeFormularioCliente.html"><h3>Clientes</h3><i class='bx bxs-group'></i></a>  
+                    <a href="./formularioCliente.html"><h3>Clientes</h3><i class='bx bxs-group'></i></a>  
                 </li>
                 <li>
-                    <a href="./AtividadeFormularioFornecedor.html"><h3>Fornecedores</h3><i class='bx bxs-group'></i></a> 
+                    <a href="./formularioFornecedor.html"><h3>Fornecedores</h3><i class='bx bxs-group'></i></a> 
                 </li>
                 <li>
-                    <a href="./AtividadeFormularioProdutos.html"><h3>Produtos</h3><i class='bx bx-volume-low'></i></i></a> 
+                    <a href="./formularioProduto.html"><h3>Produtos</h3><i class='bx bx-volume-low'></i></i></a> 
                 </li>
                 <li>
                     <a href="#">
@@ -116,58 +116,66 @@
             
         </nav>
             <div class="boxformulario">
-                <h1>Cadastro Produtos</h1>
-                <div class="codigo">
-                    <h3>Código</h3>
-                    <input type="number" name="Tnumber"/>
+                <div class="box1Formulario">
+                    <div class="titulo">
+                        <h1>Cadastro Produtos</h1>
+                    </div>
+                    <div class="codigo">
+                        <h2>Código</h2>
+                        <input type="number" name="Tnumber"/>
+                    </div>
+                    <div class="suprimentos">
+                        <h2>Suprimentos</h2>
+                        <select id="opProduto">
+                            <option value="produto">Comprado</option>
+                            <option value="produto">Fabricado</option>
+                        </select>
+                    </div>
+                    <div class="nomeP">
+                        <h2>Nome Produto</h2>
+                        <input type="page" name="Tpage"/>
+                    </div>
+                    <div class="estoque">
+                        <h2>Estoque Mínimo</h2>
+                        <input type="number" name="Tnumber"/>
+                    </div>
                 </div>
-                <div class="suprimentos">
-                    <h3>Suprimentos</h3>
-                    <input type="radio" name="Tradio"/>COMPRADO
-                    <input type="radio" name="Tradio"/>FABRICADO
-                </div>
-                <div class="nomeP">
-                    <h3>Nome Produto</h3>
-                    <input type="page" name="Tpage"/>
-                </div>
-                <div class="estoque">
-                    <h3>Estoque Mínimo</h3>
-                    <input type="number" name="Tnumber"/>
-                </div>
-                <div class="und">
-                    <h3>Unidade de Medida</h3>
-                    <select id="opUND">
-                        <option value="undP">KG</option>
-                        <option value="undP">L</option>>
-                        <option value="undP">PC</option>
-                        <option value="undP">SC</option>
-                        <option value="undP">ROL</option>>
-                        <option value="undP">UN</option>
-                    </select>
-                </div>
-                <div class="ncm">
-                    <h3>NCM</h3>
-                    <select id="opNCM">
-                        <option value="ncmP">03051000</option>
-                        <option value="ncmP">04100000</option>>
-                        <option value="ncmP">15091000</option>
-                        <option value="ncmP">20029010</option>
-                        <option value="ncmP">25183000</option>>
-                        <option value="ncmP">29033932</option>
-                        <option value="ncmP">30062000</option>
-                    </select>
-                </div>
-                <div class="preco">
-                    <h3>Preço Médio</h3>
-                    <input type="page" name="Tpage"/>
-                </div>
-                <div class="fabricante">
-                    <h3>Fabricante</h3>
-                    <input type="page" name="Tpage"/>
-                </div>
-                <div class="botao">
-                   <input type="submit" name="Tsubmit">
-                </div>
+                <div class="box2Formulario">
+                    <div class="und">
+                        <h2>Unidade de Medida</h2>
+                        <select id="opUND">
+                            <option value="undP">KG</option>
+                            <option value="undP">L</option>>
+                            <option value="undP">PC</option>
+                            <option value="undP">SC</option>
+                            <option value="undP">ROL</option>>
+                            <option value="undP">UN</option>
+                        </select>
+                    </div>
+                    <div class="ncm">
+                        <h2>NCM</h2>
+                        <select id="opNCM">
+                            <option value="ncmP">03051000</option>
+                            <option value="ncmP">04100000</option>>
+                            <option value="ncmP">15091000</option>
+                            <option value="ncmP">20029010</option>
+                            <option value="ncmP">25183000</option>>
+                            <option value="ncmP">29033932</option>
+                            <option value="ncmP">30062000</option>
+                        </select>
+                    </div>
+                    <div class="preco">
+                        <h2>Preço Médio</h2>
+                        <input type="page" name="Tpage"/>
+                    </div>
+                    <div class="fabricante">
+                        <h2>Fabricante</h2>
+                        <input type="page" name="Tpage"/>
+                    </div>
+                    <div class="botao">
+                    <input type="submit" name="Tsubmit">
+                    </div>
+            </div>
             </div>
         </div> 
     </div> 
