@@ -32,7 +32,7 @@ body{
 
 html{
     font-size: 62.5%;
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
 }
 
 h1{
@@ -243,10 +243,35 @@ nav button {
     color: var(--cor9);
     justify-content:center;
     align-items:center;
+    cursor: pointer;
 }
 
 nav .profile{
     padding: 0rem 0rem 1rem;
+}
+
+.li-menu{
+    width: 15rem;
+    padding: 0.5rem;
+    border: 0.5rem solid transparent;
+}
+
+.li-menu:hover{
+    background: var(--cor0);
+    /* cursor: pointer; */
+    transition: 0.2s;
+    border-left: 0.8rem solid var(--cor1);
+}
+
+.menu:hover h3{
+    color: var(--cor10);
+}
+
+.menu:hover i{
+    color: var(--cor10);
+}
+.menu:hover div h3{
+    color: var(--cor9);
 }
 
 .boxCartoes{
