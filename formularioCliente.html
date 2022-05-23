@@ -67,13 +67,13 @@
                     <a href="./dashboard.html"><h3>Home</h3><i class='bx bxs-home'></i></a>  
                 </li>
                 <li>
-                    <a href="./AtividadeFormularioCliente.html"><h3>Clientes</h3><i class='bx bxs-group'></i></a>  
+                    <a href="./formularioCliente.html"><h3>Clientes</h3><i class='bx bxs-group'></i></a>  
                 </li>
                 <li>
-                    <a href="./AtividadeFormularioFornecedor.html"><h3>Fornecedores</h3><i class='bx bxs-group'></i></a> 
+                    <a href="./formularioFornecedor.html"><h3>Fornecedores</h3><i class='bx bxs-group'></i></a> 
                 </li>
                 <li>
-                    <a href="./AtividadeFormularioProdutos.html"><h3>Produtos</h3><i class='bx bx-volume-low'></i></i></a> 
+                    <a href="./formularioProduto.html"><h3>Produtos</h3><i class='bx bx-volume-low'></i></i></a> 
                 </li>
                 <li>
                     <a href="#">
@@ -118,40 +118,49 @@
 
 
         <div class="boxformulario">
-            <h1>Cadastro Cliente</h1>
-            <div class="TipoPessoa">
-                <input type="radio" name="Tradio"/>Pessoa jurídica
-                <input type="radio" name="Tradio"/>Pessoa física
+            <div class="box1Formulario">
+                <div class="titulo">
+                    <h1>Cadastro Cliente</h1>
+                </div>
+                <div class="TipoPessoa">
+                    <h2>Tipo Pessoa</h2>
+                    <select id="opPessoa">
+                        <option value="fisica">Pessoa Física</option>
+                        <option value="juridica">Pessoa Jurídica</option>
+                    </select>
+                </div>
+                <div class="nome">
+                    <h2>Nome</h2>
+                    <input type="page" name="Tpage" placeholder = "Seu nome"/>
+                </div>
+                <div class="CPF">
+                    <h2>CPF</h2>
+                    <input type="page" name="Tpage" placeholder = "Seu CPF"/>
+                </div>
+                <div class="email">
+                    <h2>Email</h2>
+                    <input type="email" name="Temail" placeholder = "Seu e-mail"/>
+                </div>
             </div>
-            <div class="nome">
-                <h3>Nome</h3>
-                <input type="page" name="Tpage" placeholder = "Seu nome"/>
-            </div>
-            <div class="CPF">
-                <h3>CPF</h3>
-                <input type="page" name="Tpage" placeholder = "Seu CPF"/>
-            </div>
-            <div class="email">
-                <h3>Email</h3>
-                <input type="email" name="Temail" placeholder = "Seu e-mail"/>
-            </div>
-            <div class="nascimento">
-                <h3>Data Nascimento</h3>
-                <input type="date" name="Tdate"/>
-            </div>
-            <div class="sexo">
-                <h3>Sexo</h3>
-                <select id="opSexo">
-                    <option value="feminino">Femenino</option>
-                    <option value="masculino">Masculino</option>
-                </select>
-            </div>
-            <div class="telefone">
-                <h3>Telefone</h3>
-                <input type="tel" name="Ttel" autofocus/>
-            </div>
-            <div class="botao">
-               <input type="submit" name="Tsubmit">
+            <div class="box2Formulario">
+                <div class="nascimento">
+                    <h2>Data Nascimento</h2>
+                    <input type="date" name="Tdate"/>
+                </div>
+                <div class="sexo">
+                    <h2>Sexo</h2>
+                    <select id="opSexo">
+                        <option value="feminino">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                    </select>
+                </div>
+                <div class="telefone">
+                    <h2>Telefone</h2>
+                    <input type="tel" name="Ttel" autofocus/>
+                </div>
+                <div class="botao">
+                <input type="submit" name="Tsubmit">
+                </div>
             </div>
         </div>
     </div> 
